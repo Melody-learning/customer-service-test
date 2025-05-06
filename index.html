@@ -11,30 +11,28 @@
     
     <!-- 在这里放置您的在线客服系统接入代码 -->
     <script>
-    const script = document.createElement("script");
-    const timestamp = new Date().getTime();
-    script.src = "https://test.dncry.com/outer/chat.js?t=" + timestamp;
-    script.async = true;
-    document.body.appendChild(script);
-    script.onload = function () {
-      const props = {
-        attribute:{
-              vipLevel:"4",
-              address:"中国浙江省杭州市萧山区",
-              country:"中国",
-              createTime:"2025-04-01 12:30:00",
-        },//自定义属性
-        name:"张国强",
-        mobile:"18688882823",
-        email: "bwsbvq7734@atminmail.com",
-        "uni-id": "email",
-        platform: "1",
-        platform_flag:"", //填写渠道官网地址，需要完全一致
-        lang: "",  //可选项【单选】：英文, 中文, 印地语, 西班牙语, 法语, 阿拉伯语, 孟加拉语, 俄语, 葡萄牙语, 乌尔都语, 印度尼西亚语, 马来语, 德语, 日语, 斯瓦希里语, 马拉地语, 泰卢固语, 土耳其语, 越南语, 韩语, 波斯语, 泰米尔语, 意大利语, 泰语, 波兰语, 荷兰语
-        tenant_id: "68"
-      };
-      initChatPopup(props);
-    };
-    </script>
+    <script>
+const script = document.createElement("script");
+const timestamp = new Date().getTime();
+script.src = "https://test.dncry.com/outer/chat.js?t=" + timestamp;
+script.async = true;
+document.body.appendChild(script);
+script.onload = function () {
+  const props = {
+    attribute:{
+      sex:""
+    },//自定义属性
+    name:"",
+    mobile:"",
+    email: "",
+    "uni-id": "email",
+    platform: "1",
+    platform_flag:"", //填写渠道官网地址，需要完全一致
+    lang: "",  //可选项【单选】：英文, 中文, 印地语, 西班牙语, 法语, 阿拉伯语, 孟加拉语, 俄语, 葡萄牙语, 乌尔都语, 印度尼西亚语, 马来语, 德语, 日语, 斯瓦希里语, 马拉地语, 泰卢固语, 土耳其语, 越南语, 韩语, 波斯语, 泰米尔语, 意大利语, 泰语, 波兰语, 荷兰语
+    tenant_id: "72"
+  };
+  initChatPopup(props);
+};
+</script>
 </body>
 </html>
