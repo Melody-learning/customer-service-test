@@ -1,38 +1,34 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>在线客服系统测试页面</title>
+    <title>Document</title>
 </head>
 <body>
-    <h1>在线客服系统测试页面</h1>
-    <p>这是一个用于测试URL获取功能的页面</p>
-    
-    <!-- 在这里放置您的在线客服系统接入代码 -->
-    <script>
-    <script>
-const script = document.createElement("script");
-const timestamp = new Date().getTime();
-script.src = "https://test.dncry.com/outer/chat.js?t=" + timestamp;
-script.async = true;
-document.body.appendChild(script);
-script.onload = function () {
-  const props = {
-    attribute:{
-      sex:""
-    },//自定义属性
-    name:"",
-    mobile:"",
-    email: "",
-    "uni-id": "email",
-    platform: "1",
-    platform_flag:"", //填写渠道官网地址，需要完全一致
-    lang: "",  //可选项【单选】：英文, 中文, 印地语, 西班牙语, 法语, 阿拉伯语, 孟加拉语, 俄语, 葡萄牙语, 乌尔都语, 印度尼西亚语, 马来语, 德语, 日语, 斯瓦希里语, 马拉地语, 泰卢固语, 土耳其语, 越南语, 韩语, 波斯语, 泰米尔语, 意大利语, 泰语, 波兰语, 荷兰语
-    tenant_id: "72"
-  };
-  initChatPopup(props);
-};
-</script>
+  <script>
+    const script = document.createElement("script");
+    const timestamp = new Date().getTime();
+    script.src = "https://test.dncry.com/outer/chat.js?t=" + timestamp;
+    script.async = true;
+    document.body.appendChild(script);
+    script.onload = function () {
+      const props = {
+        attribute:{
+          address:"杭州西湖区",
+          vipLevel:"3",
+        },//自定义属性
+        name:"豪哥",
+        mobile:"18688886666",
+        email: "12345678@qq.com",
+        "uni-id": "email",
+        platform: "1",
+        platform_flag:"", //填写渠道官网地址，需要完全一致
+        lang: "",  //可选项【单选】：英文, 中文, 印地语, 西班牙语, 法语, 阿拉伯语, 孟加拉语, 俄语, 葡萄牙语, 乌尔都语, 印度尼西亚语, 马来语, 德语, 日语, 斯瓦希里语, 马拉地语, 泰卢固语, 土耳其语, 越南语, 韩语, 波斯语, 泰米尔语, 意大利语, 泰语, 波兰语, 荷兰语
+        tenant_id: "77"
+      };
+      initChatPopup(props);
+    };
+    </script>
 </body>
 </html>
